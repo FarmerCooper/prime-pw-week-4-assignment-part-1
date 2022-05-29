@@ -122,3 +122,18 @@ console.log(returnPositive());
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
 //     here in a comment, write the function, and test it!
+
+// From edabit.com -> Write a function that takes a date and returns the value "It's time for coookies"
+// if the date equals (any year), 11 (December), and the day 24)
+// Here I used x to equal the year, y equal the month, and z equal the day
+
+function timeForMilkAndCookies (x, y, z){
+  if (x > 0 && y === 11 && z === 24){
+    return "It's time for cookies";
+  }
+    return "Wait a bit more! :(";
+}
+
+console.log("Should give the first return", timeForMilkAndCookies(10, 11, 24));
+console.log("Should give the second return", timeForMilkAndCookies(10, 11, 23));
+
