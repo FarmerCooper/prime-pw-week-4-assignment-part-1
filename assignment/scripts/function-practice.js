@@ -72,7 +72,7 @@ function find( value, array ){
       return true;
     }
   }
-    return false;
+     return false;
 }
 
 console.log(find('Audi', currentFormulaOneTeams));
@@ -101,8 +101,7 @@ let arrayOfNumbers = [56, 65, 67, 76, 78, 87];
 
 function sumAll( ) {
   // TODO: loop to add items
-  for (sum=0; sum<arrayOfNumbers.length; sum++)
-  return sum;
+  return arrayOfNumbers.reduce((partialSum, a) => partialSum + a, 0);
 }
 
 console.log(sumAll(arrayOfNumbers))
@@ -111,6 +110,12 @@ console.log(sumAll(arrayOfNumbers))
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
 const positiveNumbers = [23, 35, 645, -124, -5345, 7657, 45]
+
+function returnPositive () {
+  if (positiveNumbers[i] >= 0){
+    return 
+  }
+}
 
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
