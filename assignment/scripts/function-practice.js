@@ -109,14 +109,15 @@ console.log(sumAll(arrayOfNumbers))
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
-const positiveNumbers = [23, 35, 645, -124, -5345, 7657, 45]
+const mixedArrayOfNumbers = [23, 35, 645, -124, -5345, 7657, 45]
+let onlyPositive = [];
 
-function returnPositive () {
-  if (positiveNumbers[i] >= 0){
-    return 
-  }
+function returnPositive (array) {
+    let onlyPositive = mixedArrayOfNumbers.filter(num => num > -1);
+    return onlyPositive;
 }
 
+console.log(returnPositive());
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
